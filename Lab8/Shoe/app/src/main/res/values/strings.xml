@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Shoe</string>
+    <string name="heading">Shoe Designer</string>
+    <string name="low">Low Top</string>
+    <string name="high">High Top</string>
+    <string name="knee">Knee High</string>
+    <string name="shoeButton">Create your shoe!</string>
+    <string name="platformCheck">Platform</string>
+    <string name="reflectiveCheck">Reflective</string>
+    <string name="cushionCheck">Extra Cushion</string>
+    <string name="logo">Visible Logo</string>
+    <string-array name="location">
+        <item>No Laces</item>
+        <item>Laces</item>
+        <item>Velcro</item>
+    </string-array>
+</resources>
