@@ -27,7 +27,17 @@
     </style>
 
     <style name="shoeTextStyle">
-        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5
+        </item>
         <item name="android:fontFamily">monospace</item>
     </style>
+
+    <style name="Theme.Pastel.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Pastel.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Pastel.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
