@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">quiz</string>
+    <string name="welcome">Welcome</string>
+    <string name="description">Please enter your name</string>
+    <string name="name" />
+    <string name="start">Start</string>
+    <string name="restart">Retry!</string>
+    <string name="quizQuestions" />
+    <string name="city" />
+    <string name="cityDescription" />
+    <string name="option1" />
+    <string name="option2" />
+    <string name="option3" />
+    <string name="option4" />
+    <string name="editName">Name</string>
+    <string name="share">Share</string>
+</resources>
