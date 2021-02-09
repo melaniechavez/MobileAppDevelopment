@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LCy-0J-URH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Read-->
+        <scene sceneID="kfD-pU-ps4">
+            <objects>
+                <viewController id="HVa-zD-ua2" customClass="FourthViewController" customModule="lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5o5-xK-qNI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-Zo-t6N">
+                                <rect key="frame" x="175.5" y="425" width="63" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Read">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goTo:" destination="HVa-zD-ua2" eventType="touchUpInside" id="K0J-LR-nWO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nUM-cS-xCt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hf4-Zo-t6N" firstAttribute="centerX" secondItem="5o5-xK-qNI" secondAttribute="centerX" id="FHS-84-aEa"/>
+                            <constraint firstItem="hf4-Zo-t6N" firstAttribute="centerX" secondItem="5o5-xK-qNI" secondAttribute="centerX" id="bvD-Pr-sei"/>
+                            <constraint firstItem="hf4-Zo-t6N" firstAttribute="centerY" secondItem="5o5-xK-qNI" secondAttribute="centerY" id="oxR-7e-qBf"/>
+                            <constraint firstItem="hf4-Zo-t6N" firstAttribute="centerY" secondItem="5o5-xK-qNI" secondAttribute="centerY" id="xGE-Mv-Gzn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Read" image="book" catalog="system" id="N3k-yD-FJz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfO-I4-aT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="830"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="NAl-44-p0L">
+            <objects>
+                <viewController id="AuH-Yo-GAo" customClass="SecondViewController" customModule="lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1tL-Dn-yRK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee2-ew-jC5">
+                                <rect key="frame" x="20" y="426" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="0xd-sF-GRP">
+                                <rect key="frame" x="47" y="60" width="320" height="284.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Read" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeG-86-F3R">
+                                        <rect key="frame" x="100" y="0.0" width="120.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SQl-6R-jCg">
+                                        <rect key="frame" x="0.0" y="68.5" width="320" height="216"/>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OEz-rr-QOT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0xd-sF-GRP" firstAttribute="top" secondItem="OEz-rr-QOT" secondAttribute="top" constant="16" id="2D8-Yk-keI"/>
+                            <constraint firstItem="0xd-sF-GRP" firstAttribute="centerX" secondItem="1tL-Dn-yRK" secondAttribute="centerX" id="bAC-sb-HKr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="rectangle.split.3x3" catalog="system" id="Ula-RG-sIg"/>
+                    <connections>
+                        <outlet property="choiceLabel2" destination="ee2-ew-jC5" id="7ca-wd-KwE"/>
+                        <outlet property="datePicker" destination="SQl-6R-jCg" id="kH3-cZ-VaO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsc-bI-49h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="831"/>
+        </scene>
+        <!--Books-->
+        <scene sceneID="FJn-kW-4jP">
+            <objects>
+                <viewController id="eUv-HE-q55" customClass="ThirdViewController" customModule="lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iLH-lO-fUa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="rN9-VH-1ca">
+                                <rect key="frame" x="47" y="60" width="320" height="311.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Y8-38-H2S">
+                                        <rect key="frame" x="78.5" y="0.0" width="163.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-aE-ATf">
+                                        <rect key="frame" x="0.0" y="64.5" width="320" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="eUv-HE-q55" id="sgo-lv-2fU"/>
+                                            <outlet property="delegate" destination="eUv-HE-q55" id="SSz-CV-EzJ"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNz-VY-HK5">
+                                        <rect key="frame" x="160" y="311.5" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WUO-89-dsq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rN9-VH-1ca" firstAttribute="leading" secondItem="WUO-89-dsq" secondAttribute="leading" constant="47" id="FS7-kO-uT7"/>
+                            <constraint firstItem="WUO-89-dsq" firstAttribute="trailing" secondItem="rN9-VH-1ca" secondAttribute="trailing" constant="47" id="S2K-33-hha"/>
+                            <constraint firstItem="rN9-VH-1ca" firstAttribute="top" secondItem="WUO-89-dsq" secondAttribute="top" constant="16" id="lj9-Mo-pFH"/>
+                            <constraint firstItem="rN9-VH-1ca" firstAttribute="centerX" secondItem="iLH-lO-fUa" secondAttribute="centerX" id="u1M-fu-2H0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Books" image="text.book.closed" catalog="system" id="MF2-oe-PDP"/>
+                    <connections>
+                        <outlet property="choiceLabel2" destination="YNz-VY-HK5" id="NQD-xP-dw5"/>
+                        <outlet property="picker2" destination="gbY-aE-ATf" id="T9r-ww-mSv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S46-ht-es3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.985507246377" y="829.6875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EYa-n2-wo9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LCy-0J-URH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aLt-E5-MuE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eUv-HE-q55" kind="relationship" relationship="viewControllers" id="oni-rR-1AM"/>
+                        <segue destination="AuH-Yo-GAo" kind="relationship" relationship="viewControllers" id="9uo-xb-oiJ"/>
+                        <segue destination="HVa-zD-ua2" kind="relationship" relationship="viewControllers" id="Eb1-e0-Bhu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHL-CO-YcN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="rectangle.split.3x3" catalog="system" width="128" height="93"/>
+        <image name="text.book.closed" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

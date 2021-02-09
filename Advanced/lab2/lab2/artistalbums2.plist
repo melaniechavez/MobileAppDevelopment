@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Fiction</string>
+		<key>albums</key>
+		<array>
+			<string>The Great Gatsby</string>
+			<string>The Catcher in the Rye</string>
+			<string>A Tale of Two Cities</string>
+			<string>To Kill a Mockingbird</string>
+			<string>The Kite Runner</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Science Fiction</string>
+		<key>albums</key>
+		<array>
+			<string>Slaughterhouse Five</string>
+			<string>Dark Matter</string>
+			<string>Neineteen Eighty-Four</string>
+			<string>Farenheit 451</string>
+			<string>Frankenstein</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Non-Fiction</string>
+		<key>albums</key>
+		<array>
+			<string>Sapiens</string>
+			<string>In Cold Blood</string>
+			<string>Into the Wild</string>
+			<string>A Brief History of Time</string>
+			<string>Wild</string>
+		</array>
+	</dict>
+</array>
+</plist>
