@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+<dict>
+	<key>genre</key>
+	<string>Alternative</string>
+	<key>artists</key>
+	<array>
+        <string>Rainbow Kitten Surprise</string>
+        <string>The Front Bottoms</string>
+		<string>Glass Animals</string>
+		<string>Hozier</string>
+	</array>
+</dict>
+<dict>
+	<key>genre</key>
+	<string>Indie Pop</string>
+	<key>artists</key>
+	<array>
+        <string>The Wallows</string>
+        <string>Goth Babe</string>
+        <string>Lorde</string>
+        <string>The 1975</string>
+	</array>
+</dict>
+<dict>
+	<key>genre</key>
+	<string>Alt. Rap</string>
+	<key>artists</key>
+	<array>
+		<string>Dominic Fike</string>
+		<string>Kevin Abstract</string>
+        <string>Tyler, The Creator</string>
+        <string>Gorillaz</string>
+	</array>
+</dict>
+<dict>
+	<key>genre</key>
+	<string>Rap</string>
+	<key>artists</key>
+	<array>
+		<string>Kanye West</string>
+		<string>Trippie Redd</string>
+        <string>Young Thug</string>
+        <string>Future</string>
+	</array>
+</dict>
+</array>
+</plist>
