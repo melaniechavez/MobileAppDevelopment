@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Rainbow Kitten Surprise</string>
+			<key>url</key>
+			<string>https://www.rksband.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Glass Animals</string>
+			<key>url</key>
+			<string>https://opensource.glassanimals.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Catfish and the Bottlemen</string>
+			<key>url</key>
+			<string>https://www.catfishandthebottlemen.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Group Love</string>
+			<key>url</key>
+			<string>https://www.grouplovemusic.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>The Front Bottoms</string>
+			<key>url</key>
+			<string>https://www.thefrontbottoms.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>The 1975</string>
+			<key>url</key>
+			<string>https://the1975.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Peach Pit</string>
+			<key>url</key>
+			<string>https://peachpitmusic.com/</string>
+		</dict>
+	</array>
+</plist>
