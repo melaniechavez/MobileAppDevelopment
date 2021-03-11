@@ -10,3 +10,7 @@ import Foundation
 struct Fact: Decodable {
     let text: String
 }
+
+//struct FactData: Decodable {
+//    var body = [Fact]()
+//}

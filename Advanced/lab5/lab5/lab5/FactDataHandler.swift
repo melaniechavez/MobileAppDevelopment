@@ -7,7 +7,7 @@
 
 import Foundation
 
-class JokeDataHandler {
+class FactDataHandler {
     var factData = [Fact]()
     
     //property w a closure as its value
@@ -42,6 +42,7 @@ class JokeDataHandler {
             }
             //download successful
             print("download complete")
+            DispatchQueue.main.async {self.parsejson(data!)}
         })
         //must call resume to run session
         session.resume()
@@ -50,11 +51,7 @@ class JokeDataHandler {
     
     func parsejson(_ data: Data){
         do{
-            let apiData = try JSONDecoder().decode(Fact.self, from: data)
-//            for joke in apiData.body{
-//                jokeData.body.append(joke)
-//            }
-//            print(factData.body.count)
+            let apiData = try JSONDecoder().decode([Fact].self, from: data)
             for fact in apiData{
                 factData.append(fact)
                 print(fact)
@@ -68,13 +65,12 @@ class JokeDataHandler {
         }
         print("parsejson done")
         
-        onDataUpdate?.(factData)
+        //onDataUpdate?(factData.body)
+        onDataUpdate?(factData)
     }
     
     func getFacts() -> [Fact] {
         return factData
     }
-    
-    
 }
 
