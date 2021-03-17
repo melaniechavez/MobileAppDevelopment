@@ -16,7 +16,7 @@ class GroceryTableViewController: UITableViewController {
     let dataFile = "grocery.plist"
     
     @IBAction func addGroceryItem(_ sender: UIBarButtonItem) {
-        let addalert = UIAlertController(title: "New Item", message: "Add a new item to your grocery list", preferredStyle: .alert)
+        let addalert = UIAlertController(title: "New Item", message: "Add another one of your favorite books", preferredStyle: .alert)
         
         //add textfield to the alert
         addalert.addTextField(configurationHandler: {(UITextField) in})

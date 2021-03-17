@@ -46,17 +46,16 @@ class GroceryDataHandler{
         //url of data file
         let fileURL = dataFileURL(fileName)
         //if the data file exists, use it
-        if FileManager.default.fileExists(atPath: (fileURL?.path)!){
-            do {
+        do {
                 //create an instance of PropertyListEncoder
                 let encoder = PropertyListEncoder()
                 //set format type to xml
                 encoder.outputFormat = .xml
-                let encodedData = try encoder.encode(groceryData) //write encoded data to the file
+                let encodedData = try encoder.encode(groceryData)
+                //write encoded data to the file
                 try encodedData.write(to: fileURL!)
             } catch {
                 print("write error")
-            }
         }
     }
     
