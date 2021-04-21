@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  MADdraw
+//  DrawingProject
 //
-//  Created by Melanie Chavez on 2/22/21.
+//  Created by Melanie Chavez on 3/21/21.
 //
 
 import UIKit
