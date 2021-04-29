@@ -16,26 +16,26 @@ class ViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserv
         //https://stackoverflow.com/questions/31582222/how-to-take-screenshot-of-a-uiview-in-swift/52857151
         //begins context
         //(size, opaque, scale)
-        UIGraphicsBeginImageContextWithOptions(canvasView.bounds.size, false, UIScreen.main.scale)
+        UIGraphicsBeginImageContextWithOptions(drawingView.bounds.size, false, UIScreen.main.scale)
         
         //draw view in context
         //(in, afterScreenUpdates)
-        canvasView.drawHierarchy(in: canvasView.bounds, afterScreenUpdates: true)
+        drawingView.drawHierarchy(in: drawingView.bounds, afterScreenUpdates: true)
         
         //get the screen as an image
-        let image = UIGraphicsGetImageFromCurrentImageContext()
+        let drawingImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         //Save to photos
         //https://developer.apple.com/documentation/photokit/phphotolibrary/requesting_changes_to_the_photo_library
         //https://stackoverflow.com/questions/50262819/unable-to-save-remote-photo-to-camera-roll-in-swift
-        if image != nil{
+        if drawingImage != nil{
             //use photos UI library to store image
             //make an image an asset
             PHPhotoLibrary.shared().performChanges({
                 //make an image an asset & save to album
                 //unwrap image bc checking that its not nil in if statement
-                PHAssetChangeRequest.creationRequestForAsset(from: image!)
+                PHAssetChangeRequest.creationRequestForAsset(from: drawingImage!)
             }, completionHandler: {success, error in
                 if let err = error { print(err) }
             })
@@ -47,11 +47,7 @@ class ViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserv
     }
     
     //https://developer.apple.com/documentation/pencilkit/pkcanvasview
-    @IBOutlet weak var canvasView: PKCanvasView!
-    
-    //https://ios-resolution.com/
-    let canvasWidth: CGFloat = 390
-    let canvasOverscrollHeight: CGFloat = 500
+    @IBOutlet weak var drawingView: PKCanvasView!
     
     //place to save drawing
     var drawing = PKDrawing()
@@ -62,22 +58,22 @@ class ViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserv
         super.viewDidLoad()
         
         //setup Canvas view
-        canvasView.delegate = self
-        canvasView.drawing = drawing
+        drawingView.delegate = self
+        drawingView.drawing = drawing
         
-        canvasView.alwaysBounceVertical = true
+        drawingView.alwaysBounceVertical = true
         
         //https://stackoverflow.com/questions/59781914/ios-pencilkit-not-drawing
         //Allows for any input finger, mouse cursor not just apple pencil
-        canvasView.drawingPolicy = .anyInput
+        drawingView.drawingPolicy = .anyInput
         
         //initialize PKToolPicker: https://developer.apple.com/forums/thread/653768
         //https://developer.apple.com/documentation/pencilkit/drawing_with_pencilkit
         toolPicker = PKToolPicker()
-        toolPicker.setVisible(true, forFirstResponder: canvasView)
-        toolPicker.addObserver(canvasView)
+        toolPicker.setVisible(true, forFirstResponder: drawingView)
+        toolPicker.addObserver(drawingView)
         toolPicker.addObserver(self)
-        canvasView.becomeFirstResponder()
+        drawingView.becomeFirstResponder()
     }
 
 }

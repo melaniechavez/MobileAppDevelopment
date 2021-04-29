@@ -60,7 +60,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="canvasView" destination="YYT-0W-EDx" id="6lj-XI-30k"/>
+                        <outlet property="drawingView" destination="YYT-0W-EDx" id="6lj-XI-30k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
